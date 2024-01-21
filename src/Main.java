@@ -23,5 +23,17 @@ public class Main {
         for (int b = 10; b >= 1 ; b--) {
                 System.out.print(b + " ");
         }
+
+        //Задача 3
+
+        System.out.println(" ");
+
+        int population = 12_000_000;
+        int birtRate = 12;
+        int mortality = 8;
+        for (int year = 1; year <= 10; year++) {
+            population = population + population * (birtRate - mortality) / 1000;
+            System.out.println("Год " + year + " численность населения составляет " + population);
+        }
     }
 }
