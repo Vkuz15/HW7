@@ -29,11 +29,22 @@ public class Main {
         System.out.println(" ");
 
         int population = 12_000_000;
-        int birtRate = 12;
+        int birtRate = 17;
         int mortality = 8;
         for (int year = 1; year <= 10; year++) {
             population = population + population * (birtRate - mortality) / 1000;
             System.out.println("Год " + year + " численность населения составляет " + population);
         }
+
+        //Задача 4
+
+        int contribution = 15000;
+        int month = 0;
+        do {
+            contribution = contribution + contribution / 100 * 7;
+            month = month + 1;
+            System.out.println("Месяц " + month + ", сумма наколпений составила " + contribution);
+        }
+        while (contribution <= 12000000);
     }
 }
