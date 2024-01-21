@@ -36,14 +36,16 @@ public class Main {
             System.out.println("Год " + year + " численность населения составляет " + population);
         }
 
-        //Задача 4
+        //Задача 5
 
         int contribution = 15000;
         int month = 0;
         do {
             contribution = contribution + contribution / 100 * 7;
             month = month + 1;
-            System.out.println("Месяц " + month + ", сумма наколпений составила " + contribution);
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", сумма наколпений составила " + contribution);
+            }
         }
         while (contribution <= 12000000);
     }
