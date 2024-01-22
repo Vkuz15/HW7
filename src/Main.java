@@ -55,5 +55,19 @@ public class Main {
         for (int f = friday; f <= 31; f = f + 7) {
             System.out.println("Сегодня пятница " + f + "-е число. Необходимо подготовить отчет");
         }
+
+        //Задача 8
+
+        int year = 2024;
+        int lastYears = year - 200;
+        int futureYears = year + 100;
+        int comet = 0;
+        int periodicity = 79;
+        while (comet < futureYears) {
+            if (comet > lastYears) {
+                System.out.println(comet);
+            }
+            comet = comet + periodicity;
+        }
     }
 }
