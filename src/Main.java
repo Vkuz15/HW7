@@ -47,5 +47,13 @@ public class Main {
                 System.out.println("Месяц " + a + " бюджет " + contribution);
             }
         }
+
+        //Задача 7
+
+        int friday = 5;
+        int dayMonth = 31;
+        for (int f = friday; f <= 31; f = f + 7) {
+            System.out.println("Сегодня пятница " + f + "-е число. Необходимо подготовить отчет");
+        }
     }
 }
